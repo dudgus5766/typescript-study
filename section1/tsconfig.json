@@ -1,0 +1,14 @@
+{
+  //타입스크립트를 자바스크립트로 변환하는 과정이나 타입 검사 등의 상세한 옵션들을 할 경우에 사용
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext", //프로젝트 상황, 환경에 따라 모듈 시스템 결정
+    "outDir": "dist", //컴파일 된 파일을 어디에 위치할 것인지
+    "strict": true,
+    "moduleDetection": "force", //전역이 아닌 로컬모듈로 취급할 수 있도록 만듦 - "force"로 설정 시 모든 타입스크립트 파일을 로컬모듈로 취급
+  },
+  "ts-node": {
+    "esm": true,
+  },
+  "include": ["src"] //src 폴더 안에 있는 파일들을 컴파일
+}
